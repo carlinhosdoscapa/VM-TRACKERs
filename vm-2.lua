@@ -1,7 +1,7 @@
 
 _G.Settings_Farm = {
     ["Start_Farm"] = true,
-    ["Enabled_HOP"] = true,
+    ["Enabled_HOP"] = false,
     ["Fruits_List"] = {
         'RumbleRumble',
         'FlameFlame',
