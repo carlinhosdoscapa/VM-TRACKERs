@@ -5,7 +5,7 @@ getgenv().Key = "2f7ba99a895809cf612043f5"
 
 if not _G.Config then
     local k = {
-        Enabled = false, --> true: enable or false: disable the script
+        Enabled = true, --> true: enable or false: disable the script
         Events = {
             SwordChanged = nil,
             FightingStyleChanged = nil,
