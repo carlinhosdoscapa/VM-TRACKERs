@@ -28,7 +28,7 @@ if not _G.Config then
         },  --> Necessary for script, do not adjust!
 
         Allowed_Actions = {
-            FarmingLevel = false, --> Auto farming level
+            FarmingLevel = true, --> Auto farming level
             CollectChests = true, --> Collect all chests!
             TierFruits = {"Uncommon", "Common", "Rare", "Epic", "Legendary"},
             StoreFruits = true, --> Auto store devil fruit!
@@ -50,7 +50,7 @@ if not _G.Config then
                 Fruit = { Name = "DF", Enabled = false }
             }, --> Upgrade order: Melee --> Sword --> Defense --> Fruit
 
-            FindSeaMonster = true, --> Auto find sea monsters!
+            FindSeaMonster = false, --> Auto find sea monsters!
 
             Sea2Unlock = true, --> Auto unlock Sea 2!
             Sea3Unlock = true, --> Auto unlock Sea 3!
