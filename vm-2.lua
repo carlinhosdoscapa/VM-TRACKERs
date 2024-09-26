@@ -3,9 +3,11 @@ repeat task.wait() until game.Players.LocalPlayer and game.Players.LocalPlayer:F
 
 getgenv().Key = "12d1fe2dead72abcf549c214"
 
+
+
 if not _G.Config then
     local k = {
-        Enabled = true, --> true: enable or false: disable the script
+        Enabled = false, --> true: enable or false: disable the script
         Events = {
             SwordChanged = nil,
             FightingStyleChanged = nil,
@@ -28,7 +30,7 @@ if not _G.Config then
         },  --> Necessary for script, do not adjust!
 
         Allowed_Actions = {
-            FarmingLevel = true, --> Auto farming level
+            FarmingLevel = false, --> Auto farming level
             CollectChests = true, --> Collect all chests!
             TierFruits = {"Uncommon", "Common", "Rare", "Epic", "Legendary"},
             StoreFruits = true, --> Auto store devil fruit!
@@ -50,10 +52,10 @@ if not _G.Config then
                 Fruit = { Name = "DF", Enabled = false }
             }, --> Upgrade order: Melee --> Sword --> Defense --> Fruit
 
-            FindSeaMonster = false, --> Auto find sea monsters!
+            FindSeaMonster = true, --> Auto find sea monsters!
 
-            Sea2Unlock = true, --> Auto unlock Sea 2!
-            Sea3Unlock = true, --> Auto unlock Sea 3!
+            Sea2Unlock = false, --> Auto unlock Sea 2!
+            Sea3Unlock = false, --> Auto unlock Sea 3!
 
             Aimlock = false,
             MouseLock = false,
@@ -74,11 +76,11 @@ if not _G.Config then
 
         -- Optimize farming
         Options_Disable = {
-            Textures = false,
-            VisualEffects = false,
-            Parts = false,
-            Particles = false,
-            Sky = false,
+            Textures = true,
+            VisualEffects = true,
+            Parts = true,
+            Particles = true,
+            Sky = true,
             FullBright = false
         },
 
@@ -89,4 +91,7 @@ if not _G.Config then
     }
     _G.Config = k
 end
+
+
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-KaitunKL.lua"))()
